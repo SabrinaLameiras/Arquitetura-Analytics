@@ -1,0 +1,37 @@
+{
+  "name": "@ada/api-client-layer",
+  "version": "0.0.0",
+  "private": true,
+  "license": "Apache-2.0",
+  "dependencies": {
+    "isomorphic-fetch": "^3.0.0",
+    "lodash": "^4.17.21",
+    "pluralize": "^8.0.0",
+    "jsonwebtoken": "^9.0.0",
+    "aws-xray-sdk-core": "^3.3.6",
+    "verror": "^1.10.1",
+    "aws-sdk": "^2.1358.0"
+  },
+  "peerDependencies": {
+    "@ada/api-client": "*"
+  },
+  "workspaces": {
+    "nohoist": [
+      "@ada/api-client",
+      "isomorphic-fetch",
+      "isomorphic-fetch/**",
+      "lodash",
+      "lodash/**",
+      "pluralize",
+      "pluralize/**",
+      "jsonwebtoken",
+      "jsonwebtoken/**",
+      "aws-xray-sdk-core",
+      "aws-xray-sdk-core/**",
+      "aws-sdk",
+      "aws-sdk/**",
+      "verror",
+      "verror/**"
+    ]
+  }
+}

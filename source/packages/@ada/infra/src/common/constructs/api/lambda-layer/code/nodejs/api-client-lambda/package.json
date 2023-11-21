@@ -1,0 +1,21 @@
+{
+  "name": "@ada/api-client-lambda",
+  "version": "0.0.0",
+  "private": true,
+  "main": "index.js",
+  "types": "index.d.ts",
+  "license": "Apache-2.0",
+  "files": [
+    "index.js",
+    "index.d.ts"
+  ],
+  "peerDependencies": {
+    "@ada/api-client": "*",
+    "@ada/jwt-signer": "*",
+    "aws-sdk": "*",
+    "aws-xray-sdk-core": "*",
+    "isomorphic-fetch": "*",
+    "jsonwebtoken": "*",
+    "verror": "*"
+  }
+}

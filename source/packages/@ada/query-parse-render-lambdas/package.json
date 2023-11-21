@@ -1,0 +1,12 @@
+{
+  "name": "@ada/query-parse-render-lambdas",
+  "version": "0.0.0",
+  "private": true,
+  "license": "Apache-2.0",
+  "scripts": {
+    "docker": "docker run -v $(pwd)/../../../:/source -v $HOME/.m2:/root/.m2 -w /source ada-java-build-base scripts/build-java.sh query-parse-render-lambdas",
+    "build": "yarn docker install -Djava.util.logging.config.file=./no-logging.properties",
+    "test": "yarn docker test -Djava.util.logging.config.file=./no-logging.properties",
+    "clean": "yarn docker -Djava.util.logging.config.file=./no-logging.properties"
+  }
+}

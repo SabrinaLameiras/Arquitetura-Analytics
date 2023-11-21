@@ -1,0 +1,12 @@
+{
+  "name": "@ada/athena-utilities",
+  "version": "0.0.0",
+  "private": true,
+  "license": "Apache-2.0",
+  "scripts": {
+    "docker": "docker run -v $(pwd)/../../../:/source -v $HOME/.m2:/root/.m2 -w /source ada-java-build-base scripts/build-java.sh athena-utilities",
+    "build": "yarn docker install",
+    "test": "yarn docker test",
+    "clean": "yarn docker"
+  }
+}
